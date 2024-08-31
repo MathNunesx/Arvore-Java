@@ -102,11 +102,11 @@ public class Tree {
     }
 
     public void percorrer() {
-        System.out.print("\n Exibindo em ordem: ");
+        System.out.print("\n Exibindo em ordem: " );
         inOrder(root);
-        System.out.print("\n Exibindo em pos-ordem");
+        System.out.print("\n Exibindo em pos-ordem: " );
         posOrder(root);
-        System.out.print("\n Exibindo em pre-ordem");
+        System.out.print("\n Exibindo em pre-ordem: " );
         preOrder(root);
         System.out.print("\n Altura da arvore: " + altura(root));
         System.out.print("\n Quantidade de folhas: " + folhas(root));
@@ -120,14 +120,14 @@ public class Tree {
     public void inOrder(No atual) {
         if (atual != null) {
             inOrder(atual.esquerda);
-            System.out.print(atual.item + " ");
+            System.out.print(atual.item + " " );
             inOrder(atual.direita);
         }
     }
 
     public void preOrder(No atual) {
         if (atual != null) {
-            System.out.print(atual.item + " ");
+            System.out.print(atual.item + " " );
             preOrder(atual.esquerda);
             preOrder(atual.direita);
         }
@@ -137,7 +137,7 @@ public class Tree {
         if (atual != null) {
             posOrder(atual.esquerda);
             posOrder(atual.direita);
-            System.out.print(atual.item + " ");
+            System.out.print(atual.item + " " );
         }
     }
 
